@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../static/styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../static/favicon_youtify.ico">
+        <title>Youtify - Login</title>
+    </head>
+    <body>
+        <header>
+            <a href="/" class="box logo"></a>
+            <br>
+        </header>
+        <main class="login">
+            <h2 class="welcome_back">Welcome back to Youtify!</h2>
+            <p>In order to use the app you need to be logged in first!</p>
+            <form action="/login" method="post">
+                <div>
+                    <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" autofocus required>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" autofocus required>
+                </div>
+                <div>
+                    <button type="submit">Log In</button>
+                </div>
+            </form>
+            <p>Don't have an account? <a href="/register">Register</a></p>
+        </main>
+        <footer class="login_footer">
+        </footer>
+    </body>
+</html>
